@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pre Order</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/stylePreOrder.css'>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="Home.html"><img src="../assets/LogoHCIWhite.png" class="img-logo"></a>
+    </div>
+
+    <ul>
+      <li><a href="Quarantine.html">Quarantine</a></li>
+      <li>
+         <div class="dropdown">
+            <button class="dropbtn">Game Info</button>
+              <div class="dropdown-content">
+                 <a href="Operator.html">Operators</a>
+                 <a href="Maps.html">Maps</a>
+              </div>
+          </div>
+      </li>
+      <li><a href="PreOrder.html">Pre Order</a></li>
+    </ul>
+
+  <div class="menu-toggle">
+    <input type="checkbox"/>
+    <span></span>
+    <span></span> 
+    <span></span>
+  </div>
+  </nav>
+  
+  <div class="header-pic">
+    <img src="../assets/Pre.jpg" alt="">
+  </div>
+
+  <div class="title">
+    <b>PRE-ORDER YOUR GAME</b>
+  </div>
+
+  <form name="myform" onsubmit="return validationform()">
+      <div class="container">
+        <div class="row">
+          <div class="col-25">
+            <label for="username">Username:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="username" placeholder="Ex: @Example">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="email" placeholder="Ex: Example@example.com">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="password">Password:</label>
+          </div>
+          <div class="col-75">
+            <input type="password" id="password" placeholder="Password Must Be Alphanumeric">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="address">Address:</label>
+          </div>
+          <div class="col-75">
+            <textarea id="address" placeholder="Ex: Kemanggisan Street No.123, Jakarta." style="height:80px"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="copies">Number of Copies:</label>
+          </div>
+          <div class="col-75">
+            <input type="number" id="copies" placeholder="Number of Copies" min="1" max="5">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="type">Type of The Game:</label>
+          </div>
+          <div class="col-75">
+            <select id="type">
+              <option value="Season 1">Season 1 : OPERATION VOID EDGE</option>
+              <option value="Season 2">Season 2 : OPERATION STEEL WAVE</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+          </div>
+          <div class="col-75">
+            <div class="agreement">
+              <input type="checkbox" id="TermsAndService">
+              <div class="terms-text">Terms And Service Agreement</div>
+            </div>
+          </div>
+        </div>
+
+        <label class='col-25' id='error'></label>
+
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+
+    </div>
+</form>
+  <div class="foot-container">
+    <div class="sosmed">
+      <div class="title-sosmed"><b>FIND US ON:</b></div>
+      <div class="icon-sosmed">
+        <a href="https://www.instagram.com/"><img src="../assets/LogoInstagram.png" alt=""></a>
+        <a href="https://www.facebook.com/"> <img src="../assets/LogoFacebook.png" alt=""></a>
+        <a href="https://www.twitter.com/"><img src="../assets/LogoTwitter.png" alt=""></a>
+      </div>
+    </div>
+    <div class='publisher'>
+        <img src="../assets/Ubipost(3).png" alt="">
+    </div>
+  </div>
+
+  <script src='../javascript/PreOrder.js'></script>  
+</body>
+</html>

@@ -1,0 +1,321 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  src: url(../AvenirNextLTPro-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+.img-logo{
+  background-color: black;
+  width: auto;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+.img-logo:hover{
+  background-color: #FFA500;
+}
+body{
+  overflow-x: hidden;
+  background-image: url('../assets/L1.png');
+  background-repeat: repeat-y;
+}
+.header-pic img{
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  filter: blur(5px);
+}
+nav{
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+  height: 60px ;
+  align-items: center;
+  font-family: AvenirNextLTPro;
+}
+nav ul{
+  align-items: center;
+  display: flex;
+  list-style: none;
+  width: 40%;
+  height: 50px;
+  justify-content: space-between;
+}
+nav ul li a{
+  font-size: large;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: white;
+  background-color: #FFA500;
+}
+.dropdown .dropbtn{ 
+  border: none;
+  outline: none;
+  background-color: black;
+  font-size: large;
+  color: white;
+  font-family: AvenirNextLTPro;
+}
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #FFA500;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.menu-toggle{
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-toggle input{
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  z-index: 2;
+}
+.menu-toggle span{
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  z-index: 1;
+}
+.title{
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  width: 100%;
+  font-family: AvenirNextLTPro;
+}
+.sub-title{
+  margin-left: auto;
+  margin-right: auto;
+  border-top:1px solid #FFA500;
+  border-bottom: 1px solid #FFA500;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  width: 50%;
+  font-family: AvenirNextLTPro;
+}
+.container-img{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 82%;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+.maps-img{
+  background-color:#FFA500;
+  margin-top: 30px;
+  position: relative;
+  height: 193px;
+}
+.maps-img img{
+  width: 320px;
+  height: 190px;
+}
+.maps-img:hover .overlay{
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFA500;
+}
+.text {
+  color: black;
+  font-size: 15px;
+  word-wrap:break-word;
+  position: absolute;
+  font-family: AvenirNextLTPro;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.foot-container{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+}
+.publisher{
+  height: 120px;
+}
+.publisher img{
+  height: 120px;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+.icon-sosmed{
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.icon-sosmed a img{
+  margin-left: 10px;
+  height: 40px;
+  width: 40px;
+}
+.sosmed{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.title-sosmed{
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: AvenirNextLTPro;
+  font-size: 17px;
+}
+
+/* Respnsive Tablet */
+@media screen and (max-width:800px){
+  nav ul{
+    width: 50%;
+  }
+  .icon-sosmed a img{
+    height: 35px;
+    width: 35px;
+  }
+  .publisher img{
+    height: 105px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+  }
+  .title{
+    /* background-color: red; */
+    width: 70%;
+    font-size: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sub-title{
+    font-size: 17px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .maps-img{
+    margin-top: 20px;
+    height: 163px;
+  }
+  .maps-img img{
+    width: 290px;
+    height: 160px;
+  }
+}
+
+/*Responsive Handphone */
+@media screen and (max-width:576px){
+  nav ul{    
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    background-color: black;
+    height: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .menu-toggle{
+    display: flex;
+  }
+  .text {
+    font-size: 13px;
+  }
+  .title{
+    width: 70%;
+    font-size: 31px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sub-title{
+    font-size: 18px;
+  }
+  .maps-img{
+    margin-top: 20px;
+    height: 163px;
+  }
+  .maps-img img{
+    width: 290px;
+    height: 160px;
+  }
+  .icon-sosmed a img{
+    height: 30px;
+    width: 30px;
+  }
+  .publisher img{
+    height: 90px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+  }
+}
